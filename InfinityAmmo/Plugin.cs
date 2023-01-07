@@ -14,7 +14,7 @@ namespace InfinityAmmo
     public class InfinityAmmo
     {
         public const string Name = "InfinityAmmo";
-        public const string Version = "v1.0.0";
+        public const string Version = "v1.0.1";
         public const string Author = "Rysik5318";
         public static InfinityAmmo Instance { get; private set; }
         [PluginConfig("config.yml")]
