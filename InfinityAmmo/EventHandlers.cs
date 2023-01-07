@@ -27,6 +27,7 @@ namespace InfinityAmmo
         [PluginEvent(ServerEventType.PlayerReloadWeapon)]
         public void OnReloadWeapon(Player player, Firearm gun)
         {
+            if (player.CurrentItem.ItemTypeId == ItemType.ParticleDisruptor) return;
             player.SetAmmo(gun.AmmoType, 0);
             player.AddAmmo(gun.AmmoType, 100);
         }
